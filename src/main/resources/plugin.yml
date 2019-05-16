@@ -1,0 +1,7 @@
+name: WDWGAN
+version: ${project.version}
+main: dev.mrshawn.wdwgan.WDWGAN
+prefix: WDWGAN
+authors: [MrShawn]
+website: https://mrshawn.dev
+depend: [Citizens]
