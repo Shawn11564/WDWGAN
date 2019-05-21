@@ -2,10 +2,7 @@ package dev.mrshawn.wdwgan;
 
 import dev.mrshawn.wdwgan.bodies.Body;
 import dev.mrshawn.wdwgan.bodies.BodyUtils;
-import dev.mrshawn.wdwgan.listeners.Logout;
-import dev.mrshawn.wdwgan.listeners.NPCInteraction;
-import dev.mrshawn.wdwgan.listeners.RespawnListener;
-import dev.mrshawn.wdwgan.listeners.SleepListener;
+import dev.mrshawn.wdwgan.listeners.*;
 import dev.mrshawn.wdwgan.sleep.SleepingEffects;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.PluginManager;
@@ -50,6 +47,8 @@ public final class WDWGAN extends JavaPlugin {
 		pm.registerEvents(new RespawnListener(), this);
 		pm.registerEvents(new Logout(), this);
 		pm.registerEvents(new NPCInteraction(), this);
+		pm.registerEvents(new BodyAttackedListener(), this);
+		pm.registerEvents(new Join(), this);
 	}
 
 }
