@@ -1,0 +1,5 @@
+# Every X seconds the player will regen half a heart
+regen-rate: 3
+
+# The world you set here will determine where players will respawn at instead of their bed location
+respawn-world: "world"
