@@ -42,6 +42,14 @@ public class Body {
 		return body;
 	}
 
+	public double getHealth() {
+		return body.getEntity().getHealth();
+	}
+
+	public void setHealth(d) {
+		return body.getEntity().setHealth(d);
+	}
+
 	public void deleteBody() {
 		body.destroy();
 		CitizensAPI.getNPCRegistry().deregister(body);
