@@ -21,4 +21,13 @@ public class BodyUtils {
 		return null;
 	}
 
+	public static Body getBodyFromName(String name) {
+		for (Body body : bodies) {
+			if (body.getName().equalsIgnoreCase(name)) {
+				return body;
+			}
+		}
+		return null;
+	}
+
 }

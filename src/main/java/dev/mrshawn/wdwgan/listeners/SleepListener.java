@@ -12,7 +12,9 @@ public class SleepListener implements Listener {
 	public void onSleep(PlayerBedEnterEvent e) {
 		Player player = e.getPlayer();
 		Block bed = e.getBed();
+		if (player.getWorld().getTime() >= 25000) {
 
+		}
 	}
 
 }

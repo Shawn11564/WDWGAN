@@ -42,4 +42,9 @@ public class Body {
 		return body;
 	}
 
+	public void deleteBody() {
+		body.destroy();
+		CitizensAPI.getNPCRegistry().deregister(body);
+	}
+
 }
